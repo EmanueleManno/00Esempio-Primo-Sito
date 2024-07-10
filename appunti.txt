@@ -1,4 +1,4 @@
 Services --> Vigneti
-Portfolio --> Footer
+Portfolio --> Foto
 About --> Su di noi
 contact --> contatti
