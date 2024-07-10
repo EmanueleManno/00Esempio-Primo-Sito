@@ -179,10 +179,18 @@ section .card p {
     margin-top: 5px;
 }
 
+#services {
+    background: url(img/backfoglie.png);
+    background-position: top;
+    background-size: cover;
+}
+
 /**Portfolio**/
 /*Stile della card del Portfolio*/
 .portfolio .card {
     padding: 0 0 20px;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 2px #333;
 }
 
 /*Stile della immagine della card del Portfolio*/
@@ -190,6 +198,12 @@ section .card p {
     height: 350px;
     width: 100%;
     border-radius: 8px 8px 0 0;
+}
+
+#portfolio {
+    background: url(img/backfoto2.png);
+    background-position: top;
+    background-size: cover;
 }
 
 /**About**/
@@ -211,6 +225,14 @@ section .card p {
 /*Lista dell'about*/
 .about ul {
     padding-left: 20px;
+}
+
+#about {
+    background: url(img/background-chisiamo.png);
+    background-position: top;
+    background-size: cover;
+    min-height: 800px;
+    /*Sistemare min-height mettendo le nostre cards*/
 }
 
 /**Contacts**/
