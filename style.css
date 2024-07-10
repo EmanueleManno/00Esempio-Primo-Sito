@@ -1,0 +1,350 @@
+/*Importazione Font Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Stile applicato a tutti gli elementi*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Stile Html*/
+html {
+    scroll-behavior: smooth;
+}
+
+/**Stile del corpo della pagina**/
+body {
+    background: #f2f2f2;
+}
+
+/**Stile dell'Header**/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    z-index: 2;
+}
+
+/*Classe Flex*/
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/*Contenitore*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Stile Navbar*/
+.navbar {
+    justify-content: space-between;
+}
+
+/*Stile Links di navigazione*/
+.nav-links {
+    gap: 20px;
+    list-style-type: none;
+}
+
+/*Elementi della Navbar*/
+.navbar a {
+    padding: 20px 0;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+/*Stile elementi della Navbar in Hover*/
+.navbar a:hover {
+    color: #ddd;
+}
+
+/**Homepage**/
+.homepage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(img/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*Homepage in Before*/
+.homepage::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*Contenuto della Homepage*/
+.homepage .content {
+    position: relative;
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Testo dell'Homepage*/
+.homepage .text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/*Titolo dell'Homepage*/
+.homepage .text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/*a dell'Homepage*/
+.homepage a {
+    color: #333;
+    text-decoration: none;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/*a dell'Homepage in Hover*/
+.homepage a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/**Servizi**/
+/*Stile della sezione*/
+section {
+    padding: 80px;
+}
+
+/*Titolo di sezione*/
+.section-title {
+    text-align: center;
+}
+
+/*H2 di sezione*/
+section h2 {
+    font-size: 2rem;
+}
+
+/*Cards di sezione*/
+section .cards {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Card di sezione*/
+section .card {
+    width: calc(100% / 3 - 30px);
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    padding: 40px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 40px;
+}
+
+/*Immagini delle card di sezione*/
+section .card img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*p della card di sezione*/
+section .card p {
+    margin-top: 5px;
+}
+
+/**Portfolio**/
+/*Stile della card del Portfolio*/
+.portfolio .card {
+    padding: 0 0 20px;
+}
+
+/*Stile della immagine della card del Portfolio*/
+.portfolio .card img {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+/**About**/
+/*Info della azienda*/
+.about .company-info {
+    margin-top: 30px;
+}
+
+/*Row dell'about*/
+.about .row {
+    padding: 0 10px;
+}
+
+/*H3 dell'about*/
+.about h3 {
+    margin: 30px 0 10px;
+}
+
+/*Lista dell'about*/
+.about ul {
+    padding-left: 20px;
+}
+
+/**Contacts**/
+/*Row dei contatti*/
+.contact .row {
+    margin: 60px 0 90px;
+    justify-content: space-between;
+}
+
+/*Col dei contatti*/
+.contact .row .col {
+    padding: 0 10px;
+    width: calc(100% / 2 - 50px);
+}
+
+/*p dei contatti*/
+.contact .row .col p {
+    color: #7a7a7a;
+    margin-bottom: 10px;
+}
+
+/*i dei contatti*/
+.contact .row .col p i {
+    margin-right: 10px;
+}
+
+/*Input Form dei contatti*/
+.contact form input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+}
+
+/*Textarea dei contatti*/
+.contact form textarea {
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    resize: none;
+}
+
+/*Bottone dei contatti*/
+.contact form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #fff;
+    margin-top: 10px;
+    border: none;
+    background: #333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/*Bottone dei contatti in Hover*/
+.contact form button:hover {
+    background: #525252;
+}
+
+/**Footer**/
+.footer {
+    background: #333;
+    padding: 20px 0;
+}
+
+/*Span del Footer*/
+.footer span {
+    color: #fff;
+}
+
+/*Toggler e Hamburger Menù*/
+#menu-toggler, #hamburger-btn {
+    display: none;
+}
+
+/**Responsive**/
+/*Media Query al di sotto dei 860px*/
+@media (width < 860px) {
+    .navbar .nav-links {
+        position: fixed;
+        left: 0;
+        top: 65px;
+        height: 100%;
+        display: block;
+        background: #333;
+        width: 300px;
+        padding-left: 20px;
+        padding-top: 30px;
+        left: -100%;
+        transition: all 0.4 ease;
+    }
+    
+    #menu-toggler:checked ~ .nav-links {
+        left: 0;
+    }
+    
+    .nav-links li {
+        font-size: 18px;
+    }
+    
+    #hamburger-btn {
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    section .cards .card {
+        width: calc(100% / 2 - 15px);
+    }
+    .contact .row {
+        flex-direction: column;
+    }
+    .contact .row .col {
+        width: 100%;
+    }
+    .contact .row .col:last-child {
+        margin-top: 40px;
+    }
+}
+
+/*Media Query al di sotto dei 560px*/
+@media (width < 560px) {
+    section .cards .card {
+        width: 100%;
+    }
+    .homepage .text h1 {
+        font-size: 30px;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
